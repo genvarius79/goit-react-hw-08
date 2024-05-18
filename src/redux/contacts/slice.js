@@ -4,7 +4,9 @@ import {
   addContact,
   deleteContact,
 } from "../contacts/operations.js";
-import { selectFilter } from "../filters/slice.js";
+import { selectFilter } from "../filters/selectors.js";
+import { selectContacts } from "./selectors.js";
+import { logOut } from "../auth/operations.js";
 
 const contactsSlice = createSlice({
   name: "contacts",
@@ -45,15 +47,21 @@ const contactsSlice = createSlice({
           (item) => item.id !== action.payload.id
         );
         state.loading = false;
+      })
+      .addCase(logOut.fulfilled, (state) => {
+        state.items = [];
+        state.loading = false;
+        state.error = null;
       }),
 });
-const selectContacts = (state) => state.contacts.items;
 
 export const selectFilteredContacts = createSelector(
   [selectContacts, selectFilter],
   (contacts, filter) => {
-    return contacts.filter((contact) =>
-      contact.name.toLowerCase().includes(filter.toLowerCase())
+    return contacts.filter(
+      (contact) =>
+        contact.name.toLowerCase().includes(filter.toLowerCase()) ||
+        contact.number.toLowerCase().includes(filter.toLowerCase())
     );
   }
 );

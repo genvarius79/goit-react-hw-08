@@ -1,10 +1,7 @@
-.container {
+.text {
   display: flex;
-  flex-direction: column;
-}
-.h1 {
-  font-size: 36px;
-  font-weight: 700;
-  color: black;
-  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: rgb(30, 0, 255);
 }
