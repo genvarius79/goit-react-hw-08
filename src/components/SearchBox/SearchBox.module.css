@@ -3,8 +3,19 @@
 }
 .container {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: auto;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #c9e9e9;
 }
 .input {
-  width: 265px;
+  width: 100%;
+  border: 1px solid rgb(133, 130, 130);
   border-radius: 3px;
+  font-size: 16px;
 }

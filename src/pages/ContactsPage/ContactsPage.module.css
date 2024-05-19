@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  gap: 120px;
+}
+.formwrapper {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  padding-top: 61px;
+}

@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 import * as Yup from "yup";
 import { useDispatch } from "react-redux";
 import { addContact } from "../../redux/contacts/operations";
+import { toast } from "react-hot-toast";
 
 import css from "./ContactForm.module.css";
 const ValidationSchema = Yup.object().shape({
@@ -35,6 +36,7 @@ export default function ContactForm() {
       })
     );
     actions.resetForm();
+    toast.success("Addition success!!!");
   };
   return (
     <Formik

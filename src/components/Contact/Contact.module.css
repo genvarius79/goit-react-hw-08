@@ -6,10 +6,15 @@
   border: 1px solid #000;
   border-radius: 5px;
   padding: 10px;
+  background-color: #c9e9e9;
 }
 .btn {
   width: 200;
   height: fit-content;
+  background-color: #749bc2;
+  border-radius: 3px;
+  border-style: none;
+  color: #ffffff;
 }
 .groupAll {
   display: flex;

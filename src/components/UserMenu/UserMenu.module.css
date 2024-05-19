@@ -7,3 +7,9 @@
 .username {
   font-weight: 700;
 }
+.button {
+  background-color: #749bc2;
+  border-style: none;
+  border-radius: 3px;
+  color: #ffffff;
+}

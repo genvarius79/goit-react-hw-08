@@ -11,7 +11,7 @@ export default function LoginForm() {
     dispatch(logIn(values))
       .unwrap()
       .then(() => {
-        toast.success("Success!!!");
+        toast.success("Login Success!!!");
       })
       .catch(() => {
         toast.error("Error incorrect login or password!!!");
@@ -37,7 +37,9 @@ export default function LoginForm() {
           Password
           <Field type="password" name="password" />
         </label>
-        <button type="submit">Log In</button>
+        <button className={css.button} type="submit">
+          Log In
+        </button>
       </Form>
     </Formik>
   );
