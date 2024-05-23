@@ -1,16 +1,6 @@
-.container {
-  background-color: rgba(228, 228, 228, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-.formwrapper {
-  display: flex;
-  flex-direction: column;
-}
-.wrapper {
-  padding-top: 61px;
+.text {
+  font-size: 24px;
+  color: #000000;
 }
 
 /* ++++++++++++ 320px ....& +++++++++++++++++++ */
@@ -30,7 +20,5 @@
   /* ++++++++++++ TABLET STYLES +++++++++++++++++++ */
   .container {
     padding: 0 50px 0 50px;
-    flex-direction: row;
-    gap: 120px;
   }
 }

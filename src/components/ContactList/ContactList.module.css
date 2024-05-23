@@ -1,5 +1,13 @@
 .list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  /* ++++++++++++ TABLET STYLES +++++++++++++++++++ */
+  .list {
+    flex-direction: row;
+  }
 }
