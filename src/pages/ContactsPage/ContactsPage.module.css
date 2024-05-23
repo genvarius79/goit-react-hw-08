@@ -1,5 +1,4 @@
 .container {
-  background-color: rgba(228, 228, 228, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,6 +7,7 @@
 .formwrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .wrapper {
   padding-top: 61px;

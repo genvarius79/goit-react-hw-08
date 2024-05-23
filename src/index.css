@@ -2,7 +2,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: rgba(228, 228, 228, 0.5);
   color: #000000;
   padding: 0;
   display: flex;
