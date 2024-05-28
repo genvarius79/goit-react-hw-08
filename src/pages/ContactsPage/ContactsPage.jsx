@@ -19,8 +19,8 @@ export default function ContactsPage() {
 
   return (
     <div className={css.container}>
+      <PageTitle>Your contacts</PageTitle>
       <div className={css.formwrapper}>
-        <PageTitle>Your contacts</PageTitle>
         <ContactForm />
         <SearchBox />
       </div>

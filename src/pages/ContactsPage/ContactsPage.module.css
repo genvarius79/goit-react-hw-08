@@ -2,35 +2,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
 }
 .formwrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.wrapper {
-  padding-top: 61px;
-}
 
 /* ++++++++++++ 320px ....& +++++++++++++++++++ */
 @media screen and (min-width: 320px) {
   .container {
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    padding: 0 15px 20px 15px;
   }
 }
 
 @media screen and (min-width: 375px) {
   .container {
-    padding: 0 25px 0 25px;
+    padding: 0 25px 20px 25px;
   }
 }
 @media screen and (min-width: 768px) {
   /* ++++++++++++ TABLET STYLES +++++++++++++++++++ */
   .container {
-    padding: 0 50px 0 50px;
-    flex-direction: row;
-    gap: 120px;
+    align-items: flex-start;
+    padding: 0 35px 20px 35px;
+  }
+  .formwrapper {
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1158px) {
+  /* ++++++++++++ DESCTOP STYLES +++++++++++++++++++ */
+  .container {
+    padding: 0 50px 20px 50px;
+  }
+  .formwrapper {
+    align-items: flex-start;
   }
 }

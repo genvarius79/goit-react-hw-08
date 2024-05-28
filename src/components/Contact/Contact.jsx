@@ -3,12 +3,13 @@ import { MdPerson, MdCall } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contacts/operations";
 import { toast } from "react-hot-toast";
+
 export default function Contact({ item: { id, name, number } }) {
   const dispatch = useDispatch();
 
   const handleDelete = () => {
     const confirmated = confirm(
-      "Do you really want to delete a contact?\nPress OK or Cancel."
+      "Do you really want to delete a contact ?\nPress OK or Cancel"
     );
     if (confirmated) {
       dispatch(deleteContact(id));
