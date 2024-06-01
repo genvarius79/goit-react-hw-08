@@ -5,6 +5,10 @@
   font-weight: 700;
   color: #ffffff;
 }
+.link:hover {
+  text-shadow: 3px 5px 5px rgb(0, 0, 0);
+  color: #deefeb;
+}
 
 .link.active {
   color: #e84a5f;
